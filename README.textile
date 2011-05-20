@@ -1,0 +1,59 @@
+h1. PrettyFlash
+
+Rails 3.0.x plugin that provides "pretty" flash messages. Base code are from Ryan Heath's <a src='http://github.com/rpheath/pretty_flash'>PrettyFlash</a>.
+
+h2. How to install...
+
+<pre><code>$ rails plugin install git@github.com:jedssp/pretty_flash.git</code></pre>
+
+h2. In the controller...
+
+This plugin gives a couple of convenience methods for setting flash messages.
+
+<pre><code>notice "Hooray! You did something good."
+warning "Uhm, You're not allowed to do that yet."
+error "Ooooops! Something went wrong."
+alert "Errr. This is really wrong."</code></pre>
+
+Passing :notice => ‘This is a flash message’ or alert: ‘Something went wrong’ (works only for Ruby 1.9.x) to the format call inside a respond_to block or the flash[] hash will work too.
+
+h2. In the view...
+
+Then all you have to do to display them is:
+
+<pre><code><%= display_flash_messages %></code></pre>
+
+Easy enough?
+
+h2. Get Started
+
+There's an assets folder with this plugin, that contains the images, CSS, and javascript (optional). There's a rake task that installs this stuff where it needs to be (inside the public/ directory).
+
+<pre><code>$ rake pretty_flash:install
+</code></pre>
+
+Also, there is an option to pass javascript library argument when running this rake task.
+
+<pre><code>$ rake pretty_flash:install[jquery]
+$ rake pretty_flash:install[prototype]</code></pre>
+  
+Right now, this plugin supports prototype and jquery. If you're not using either, feel free to add a code similar to behavior of the existing javascripts and ask for a pull request. ;-)
+
+These javascripts are only used to fade the flash messages after some seconds (defaults to 25 seconds).
+
+Enjoy and have fun!
+
+h2. Bugs & Suggestions
+
+Feel free to submit bug reports.
+
+h2. Credits
+
+Alex Schorsch (alex@mygobble.com)
+Martin Solli (martin.solli@budstikka.no)
+Peter Haza (peter.haza@gmail.com)
+rpheath (rpheath@gmail.com) [ORIGINAL AUTHOR]
+
+h2. Licensing
+
+See LICENSE.
