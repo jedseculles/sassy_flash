@@ -4,7 +4,7 @@ Rails 3.0.x plugin that provides "pretty" flash messages. Base code are from Rya
 
 h2. How to install...
 
-<pre><code>$ rails plugin install git@github.com:jedssp/pretty_flash.git</code></pre>
+<pre><code>$ rails plugin install git@github.com:jedssp/prettyFlash.git</code></pre>
 
 h2. In the controller...
 
@@ -15,7 +15,7 @@ warning "Uhm, You're not allowed to do that yet."
 error "Ooooops! Something went wrong."
 alert "Errr. This is really wrong."</code></pre>
 
-Passing :notice => ‘This is a flash message’ or alert: ‘Something went wrong’ (works only for Ruby 1.9.x) to the format call inside a respond_to block or the flash[] hash will work too.
+Passing <code>:notice => ‘This is a flash message’</code> or <code>alert: ‘Something went wrong’</code> (works only for Ruby 1.9.x) to the format call inside a <code>respond_to</code> block or the <code>flash[]</code> hash will work too.
 
 h2. In the view...
 
