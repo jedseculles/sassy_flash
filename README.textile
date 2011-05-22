@@ -35,11 +35,12 @@ There's an assets folder with this plugin, that contains the images, CSS, and ja
 Also, there is an option to pass javascript library argument when running this rake task.
 
 <pre><code>$ rake pretty_flash:install[jquery]
+$ rake pretty_flash:install[mootools]
 $ rake pretty_flash:install[prototype]</code></pre>
   
-Right now, this plugin supports prototype and jquery. If you're not using either, feel free to add a code similar to behavior of the existing javascripts and ask for a pull request. ;-)
+Right now, this plugin supports jQuery, MooTools, and Prototype. If you're not using either, feel free to add a code similar to behavior of the existing javascripts and ask for a pull request. ;-)
 
-These javascripts are only used to fade the flash messages after some seconds (defaults to 25 seconds).
+These javascripts are only used to fade the flash messages after some seconds (defaults to 2.5 seconds).
 
 Enjoy and have fun!
 

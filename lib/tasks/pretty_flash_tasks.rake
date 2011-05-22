@@ -3,7 +3,7 @@ namespace :pretty_flash do
   task :install, :javascript do |t, args|
     args.with_defaults(:javascript => '')
     ASSETS = File.join(File.dirname(__FILE__), ['..', '..'].join(File::SEPARATOR), 'assets')
-    SUPPORTED_JAVASCRIPTS = %w(jquery prototype)
+    SUPPORTED_JAVASCRIPTS = %w(jquery mootools prototype)
     Dir.glob("#{ASSETS}/*").each do |folder|
       folder_name = folder.gsub(/\/.+\//, '')
       destination = File.join(Rails.public_path, folder_name)
