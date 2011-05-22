@@ -1,6 +1,8 @@
 h1. SassyFlash
 
-Rails 3.0.x plugin that provides "sassy" flash messages. Base code are from Ryan Heath's <a src='http://github.com/rpheath/pretty_flash'>PrettyFlash</a>.
+Rails 3.0.x plugin that provides "sassy" flash messages. Base code are from Ryan Heath's "PrettyFlash":http://github.com/rpheath/pretty_flash.
+
+SassyFlash gives you a default stylish sticky flash messages on top of your page and will fade out in matter of seconds.
 
 h2. How to install...
 
@@ -27,20 +29,21 @@ Easy enough?
 
 h2. Get Started
 
-There's an assets folder with this plugin, that contains the images, CSS, and javascript (optional). There's a rake task that installs this stuff where it needs to be (inside the public/ directory).
+There's an assets folder with this plugin, that contains the images, CSS, and javascript. There's a rake task that installs this stuff where it needs to be (inside the public/ directory).
 
 <pre><code>$ rake sassy_flash:install
 </code></pre>
 
 Also, there is an option to pass javascript library argument when running this rake task.
 
-<pre><code>$ rake sassy_flash:install[jquery]
+<pre><code>$ rake sassy_flash:install[dojo]
+$ rake sassy_flash:install[jquery]
 $ rake sassy_flash:install[mootools]
 $ rake sassy_flash:install[prototype]</code></pre>
   
-Right now, this plugin supports jQuery, MooTools, and Prototype. If you're not using either, feel free to add a code similar to behavior of the existing javascripts and ask for a pull request. ;-)
+Right now, this plugin supports Dojo, jQuery, MooTools, and Prototype. All code are tested on "jsFiddle":http://jsfiddle.net/. If you're not fan of those javascripts, feel free to add a code similar to behavior of those files and ask for a pull request. ;-)
 
-These javascripts are only used to fade the flash messages after some seconds (defaults to 2.5 seconds).
+Those javascripts are only used to fade the flash messages after some seconds (defaults to 2.5 seconds).
 
 Enjoy and have fun!
 
