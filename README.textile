@@ -49,7 +49,7 @@ Enjoy and have fun!
 
 h2. Bugs & Suggestions
 
-At jsFiddle, prototype.sassyFlash.js didn't work for Prototype 1.7 but it works for Prototype 1.6.x. I don't know if there is a problem with jsFiddle or not. If you are using Prototype in your application, please confirm if the code works or not.
+At "jsFiddle":http://jsfiddle.net/, prototype.sassyFlash.js doesn't work for Prototype 1.7 but it works for Prototype 1.6.x. I don't know if there is a problem with jsFiddle or not. If you are using Prototype in your application, please confirm if the code works or not.
 
 Feel free to submit bug reports and code refactor.
 
