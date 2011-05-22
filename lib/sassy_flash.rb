@@ -1,4 +1,4 @@
-module PrettyFlash
+module SassyFlash
   module ControllerMethods
     TYPES = [:notice, :warning, :error, :alert]
     
@@ -17,7 +17,7 @@ module PrettyFlash
     def display_flash_messages
       html = "".tap do |html|
         flash.each do |css_class, message|
-          html << content_tag(:p, content_tag(:span, nil) + message, :class => css_class)
+          html << content_tag(:p, content_tag(:span, nil) + message, :class => "flash_#{css_class}", :id => "flash_#{css_class}")
         end
       end
       raw(html)

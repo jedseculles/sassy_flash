@@ -1,7 +1,7 @@
-p.notice,
-p.warning,
-p.error,
-p.alert {
+p.flash_notice,
+p.flash_warning,
+p.flash_error,
+p.flash_alert {
   position: fixed;
   top: 0;
   left: 0;
@@ -13,38 +13,38 @@ p.alert {
   margin-bottom: 10px;
 }
 
-p.notice span,
-p.warning span,
-p.error span,
-p.alert span {
+p.flash_notice span,
+p.flash_warning span,
+p.flash_error span,
+p.flash_alert span {
   float: left;
   width: 42px;
   height: 32px;
   margin-top: -5px;
 }
 
-p.notice {
+p.flash_notice {
   background: url(../images/flash-notice-bg.jpg) repeat-x left top;
   color: #41612f; 
 }
-p.notice span {
+p.flash_notice span {
   background: url(../images/flash-check.png) no-repeat left top;
 }
 
-p.warning {
+p.flash_warning {
   background: url(../images/flash-warning-bg.jpg) repeat-x left -10px;
   color: #a26a1a;
 }
-p.warning span {
+p.flash_warning span {
   margin-top: -6px;
   background: url(../images/flash-warning.png) no-repeat left top;
 }
 
-p.error, p.alert {
+p.flash_error, p.flash_alert {
   background: url(../images/flash-error-bg.jpg) repeat-x left -10px;
   color: #af0100;
 }
-p.error span, p.alert span {
+p.flash_error span, p.flash_alert span {
   margin-top: -6px;
   background: url(../images/flash-error.png) no-repeat left top;
 }

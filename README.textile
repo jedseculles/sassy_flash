@@ -1,10 +1,10 @@
-h1. PrettyFlash
+h1. SassyFlash
 
-Rails 3.0.x plugin that provides "pretty" flash messages. Base code are from Ryan Heath's <a src='http://github.com/rpheath/pretty_flash'>PrettyFlash</a>.
+Rails 3.0.x plugin that provides "sassy" flash messages. Base code are from Ryan Heath's <a src='http://github.com/rpheath/pretty_flash'>PrettyFlash</a>.
 
 h2. How to install...
 
-<pre><code>$ rails plugin install git@github.com:jedssp/prettyFlash.git</code></pre>
+<pre><code>$ rails plugin install git@github.com:jedssp/sassy_flash.git</code></pre>
 
 h2. In the controller...
 
@@ -29,14 +29,14 @@ h2. Get Started
 
 There's an assets folder with this plugin, that contains the images, CSS, and javascript (optional). There's a rake task that installs this stuff where it needs to be (inside the public/ directory).
 
-<pre><code>$ rake pretty_flash:install
+<pre><code>$ rake sassy_flash:install
 </code></pre>
 
 Also, there is an option to pass javascript library argument when running this rake task.
 
-<pre><code>$ rake pretty_flash:install[jquery]
-$ rake pretty_flash:install[mootools]
-$ rake pretty_flash:install[prototype]</code></pre>
+<pre><code>$ rake sassy_flash:install[jquery]
+$ rake sassy_flash:install[mootools]
+$ rake sassy_flash:install[prototype]</code></pre>
   
 Right now, this plugin supports jQuery, MooTools, and Prototype. If you're not using either, feel free to add a code similar to behavior of the existing javascripts and ask for a pull request. ;-)
 
@@ -50,10 +50,11 @@ Feel free to submit bug reports.
 
 h2. Credits
 
+<small>[Collaborators of pretty_flash plugin]</small>
 Alex Schorsch (alex@mygobble.com)
 Martin Solli (martin.solli@budstikka.no)
 Peter Haza (peter.haza@gmail.com)
-rpheath (rpheath@gmail.com) [ORIGINAL AUTHOR]
+rpheath (rpheath@gmail.com) <small>[Original Author]</small>
 
 h2. Licensing
 

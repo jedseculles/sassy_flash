@@ -1,5 +1,5 @@
-namespace :pretty_flash do
-  desc "Copies assets to proper application directories. Optional argument [JAVASCRIPT] (jquery or prototype)."
+namespace :sassy_flash do
+  desc "Copies assets to proper application directories. Optional argument [JAVASCRIPT] (jquery, mootools or prototype)."
   task :install, :javascript do |t, args|
     args.with_defaults(:javascript => '')
     ASSETS = File.join(File.dirname(__FILE__), ['..', '..'].join(File::SEPARATOR), 'assets')
@@ -14,11 +14,11 @@ namespace :pretty_flash do
         file_to_copy = File.join(destination, File.basename(asset))
         if folder_name.eql?('javascripts') and !args[:javascript].blank?
           if SUPPORTED_JAVASCRIPTS.include?(args[:javascript])
-            unless File.exists?(File.join(destination, "#{args[:javascript]}.prettyFlash.js"))
-              puts " - copying %s.prettyFlash.js to %s" % [args[:javascript], destination.gsub(Rails.root.to_s, '')]
-              FileUtils.cp File.join(ASSETS, "javascripts/#{args[:javascript]}.prettyFlash.js"), destination
+            unless File.exists?(File.join(destination, "#{args[:javascript]}.sassyFlash.js"))
+              puts " - copying %s.sassyFlash.js to %s" % [args[:javascript], destination.gsub(Rails.root.to_s, '')]
+              FileUtils.cp File.join(ASSETS, "javascripts/#{args[:javascript]}.sassyFlash.js"), destination
             else
-              puts " - %s.prettyFlash.js already exist in %s" % [args[:javascript], destination.gsub(Rails.root.to_s, '')]
+              puts " - %s.sassyFlash.js already exist in %s" % [args[:javascript], destination.gsub(Rails.root.to_s, '')]
             end
           else
             puts " - no support for %s, copying %s to %s instead" % [args[:javascript], File.basename(asset), destination.gsub(Rails.root.to_s, '')]
