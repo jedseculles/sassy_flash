@@ -6,7 +6,7 @@ SassyFlash gives you a default stylish sticky flash messages on top of your page
 
 h2. How to install...
 
-<pre><code>$ rails plugin install git@github.com:jedssp/sassy_flash.git</code></pre>
+<pre><code>$ rails plugin install git@github.com:jfjade18/sassy_flash.git</code></pre>
 
 h2. In the controller...
 
