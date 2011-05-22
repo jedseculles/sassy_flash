@@ -1,12 +1,9 @@
-var sassyFx = function() {
-  $$('.flash_notice', '.flash_warning', '.flash_error', '.flash_alert').each(function(e) {
-    if (e) {
-      Effect.Fade(e, {
-        duration: 1.5
-      });
-    }
-  });
-};
+function sassyFx() {
+  Effect.Fade('flash_notice', { duration: 1.5 });
+  Effect.Fade('flash_warning', { duration: 1.5 });
+  Effect.Fade('flash_error', { duration: 1.5 });
+  Effect.Fade('flash_alert', { duration: 1.5 });
+}
 
 document.observe('dom:loaded', function() {
   setTimeout(sassyFx, 2500);
