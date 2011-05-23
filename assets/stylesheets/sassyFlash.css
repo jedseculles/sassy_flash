@@ -1,16 +1,17 @@
-p.flash_notice,
-p.flash_warning,
-p.flash_error,
-p.flash_alert {
+div.sassy_flashes {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   margin: 0 auto;
-  
+}
+
+p.flash_notice,
+p.flash_warning,
+p.flash_error,
+p.flash_alert {
   font-size: 18px;
   padding: 15px 10px;
-  margin-bottom: 10px;
 }
 
 p.flash_notice span,
