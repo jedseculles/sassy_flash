@@ -20,7 +20,7 @@ module SassyFlash
           html << content_tag(:p, content_tag(:span, nil) + message, :class => "flash_#{css_class}", :id => "flash_#{css_class}")
         end
       end
-      html_wrapper = content_tag(:div, html, :class => "sassy_flashes", :id => "sassy_flashes")
+      html_wrapper = content_tag(:div, raw(html), :class => "sassy_flashes", :id => "sassy_flashes")
       raw(html_wrapper)
     end
   end
