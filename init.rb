@@ -1,4 +1,4 @@
-require 'pretty_flash'
+require 'sassy_flash'
 
-ActionController::Base.send(:include, PrettyFlash::ControllerMethods)
-ActionView::Base.send(:include, PrettyFlash::Display)
+ActionController::Base.send(:include, SassyFlash::ControllerMethods)
+ActionView::Base.send(:include, SassyFlash::Display)

@@ -7,7 +7,7 @@ message = <<-MESSAGE
   
   $ rake sassy_flash:install[JAVASCRIPT]
   
-  JAVASCRIPT - You can pass either jquery, mootools or 
+  JAVASCRIPT - You can pass either dojo, jquery, mootools or
   prototype, or feel free to leave it blank.
   
   That will copy all of the necessary assets to their 
