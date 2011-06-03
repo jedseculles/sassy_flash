@@ -1,5 +1,5 @@
 function sassyFx() {
-  $('p.flash_notice, p.flash_warning, p.flash_error, p.flash_alert').fadeOut(1500);
+  $('.sassy_flashes').fadeOut(1500);
 }
 
 $(document).ready(function() {
